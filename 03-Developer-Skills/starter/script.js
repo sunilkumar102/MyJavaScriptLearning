@@ -4,13 +4,25 @@
 let y = '23';
 console.log(y);
 
-//debugger
-const tempInK = function () {
-  const value = Number(prompt('enter the temp'));
+//use of debugger
+// const tempInK = function () {
+//   const value = Number(prompt('enter the temp'));
 
-  const convertedTemp = value + 273;
-  console.table(value);
-  return convertedTemp;
-};
+//   const convertedTemp = value + 273;
+//   console.table(value);
+//   return convertedTemp;
+// };
 
-console.log(tempInK());
+// console.log(tempInK());
+//coding challenge
+
+function printForcast(arr) {
+  let str = '';
+  for (let i = 0; i < arr.length; i++) {
+    str = str + ` ${arr[i]} in ${i + 1} days ...`;
+  }
+  console.log(`...${str}`);
+}
+
+printForcast([17, 21, 23]);
+printForcast([12, 5, -5, 0, 4]);
