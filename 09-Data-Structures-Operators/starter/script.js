@@ -399,3 +399,14 @@ const upperCase = function (word) {
 };
 
 upperCase('my Name is sunil kumar');
+
+//padding
+const maskCreditCard = function (num) {
+  const str = num + '';
+  const last = str.slice(-4);
+  return last.padStart(str.length, '*');
+};
+
+console.log(maskCreditCard(7385847463748));
+
+//string repeat
